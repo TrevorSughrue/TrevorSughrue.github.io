@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
+import { Slide } from "vue3-burger-menu";
+
 const options = {
   background: {
     color: {
@@ -92,6 +94,11 @@ const particlesInit = async (engine: Engine) => {
   </header>
 
   <main>
+    <Slide>
+      <a id="home" href="#">
+        <span>Home</span>
+      </a>
+    </Slide>
     <TheWelcome />
 
     <Particles
